@@ -4,9 +4,16 @@ angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardS
         var offset = random(1, 1485);
 
         cardService.getOneCard(offset).then(function (response) {
-            console.log(response);
+
+            if (response === 'NO DESCRIPTION, TRY AGAIN!') {
+                console.log(response);
+                $scope.getCard();
+            } else {
+                $scope.character = response;
+                console.log($scope.character);
+            }
         })
-    }();
+    };
     
     
     

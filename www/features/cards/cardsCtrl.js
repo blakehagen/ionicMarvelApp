@@ -1,6 +1,8 @@
 angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardService) {
 
     $scope.getCard = function () {
+        $scope.loading = true;
+        $scope.loaded = false;
         var offset = random(1, 1485);
 
         cardService.getOneCard(offset).then(function (response) {
@@ -10,6 +12,9 @@ angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardS
                 $scope.getCard();
             } else {
                 $scope.character = response;
+                $scope.loading = false;
+                $scope.loaded = true;
+
                 console.log($scope.character);
             }
         })

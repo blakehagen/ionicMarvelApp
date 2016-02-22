@@ -1,9 +1,14 @@
-.main-wrapper {
+.background {
     background: #eee;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
+}
+
+.main-wrapper {
+    /*border: 10px solid red;*/
+    width: 100%;
+}
+
+a {
+    color: #ddd;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -12,9 +17,19 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 100;
 }
 
+.loading {
+    margin-top: 150px;
+    text-align: center;
+}
+
+    .loading p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
 .item h2 {
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
     padding: 0 5px;
 }
 

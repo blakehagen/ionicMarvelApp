@@ -1,3 +1,43 @@
+.main-wrapper {
+    background: #eee;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-weight: 100;
+}
+
+.item h2 {
+    margin: 0;
+    font-size: 36px;
+    padding: 0 5px;
+}
+
+.card {
+    text-align: center;
+}
+
+    .card img {
+        min-width: 290px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+.img-wrap {
+    text-align: center;
+}
+    
+.text-wrap {
+    width: 290px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .button {
     margin: 0 auto;
 }

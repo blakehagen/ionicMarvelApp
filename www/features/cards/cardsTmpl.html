@@ -1,18 +1,35 @@
 <ion-pane>
+
     <ion-header-bar class="bar-assertive">
         <h1 class="title">Marvel Character Cards</h1>
     </ion-header-bar>
-    <ion-content>
-        <div class="list card"></div>
 
+    <ion-content class="main-wrapper">
+        <div class="list card">
 
+            <div class="item item-body">
+                <h2>{{character.name}}</h2>
+            </div>
 
+            <div class="item item-body">
+                <div class="img-wrap">
+                    <img ng-src="{{character.image}}">
+                </div>
+                <div class="text-wrap">
+                    <p>{{character.description}}</p>
+                </div>
+            </div>
 
+            <div class="item item-body">
+                <a ng-href="{{character.urls[0].url}}" target="_blank">
+                    <p>Additional Details from Marvel</p>
+                </a>
+            </div>
+        </div>
     </ion-content>
+
     <ion-footer-bar class="bar-light">
         <button class="button button-assertive icon ion-ios-plus-empty" ng-click="getCard()">&nbsp;New Card</button>
-        
+    </ion-footer-bar>
 
-
-        </ion-footer-bar>
 </ion-pane>

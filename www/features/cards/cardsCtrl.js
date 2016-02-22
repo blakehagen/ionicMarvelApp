@@ -1,5 +1,18 @@
-angular.module('marvelCardsApp').controller('cardsCtrl', function($scope){
+angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardService) {
+
+    $scope.getCard = function () {
+        var offset = random(1, 1485);
+
+        cardService.getOneCard(offset).then(function (response) {
+            console.log(response);
+        })
+    }();
     
-   $scope.test = 'poop'; 
     
+    
+    // Generate Random Number for Card Offset //
+    function random(low, high) {
+        return Math.floor(Math.random() * (high - low) + low);
+    };
+
 });

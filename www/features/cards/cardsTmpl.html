@@ -17,13 +17,10 @@
                 </div>
                 <div class="text-wrap">
                     <p>{{character.description}}</p>
+                    <a ng-href="{{character.urls[0].url}}" target="_blank">
+                        <p>Additional Details from Marvel</p>
+                    </a>
                 </div>
-            </div>
-
-            <div class="item item-body">
-                <a ng-href="{{character.urls[0].url}}" target="_blank">
-                    <p>Additional Details from Marvel</p>
-                </a>
             </div>
         </div>
     </ion-content>

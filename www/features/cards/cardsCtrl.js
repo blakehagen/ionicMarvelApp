@@ -1,4 +1,13 @@
-angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardService) {
+angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, $state, cardService) {
+
+
+    $scope.goToHomeView = function () {
+        $state.go('home');
+    };
+
+    $scope.goToCardView = function () {
+        $state.go('card');
+    };
 
     $scope.getCard = function () {
         $scope.loading = true;
@@ -19,6 +28,8 @@ angular.module('marvelCardsApp').controller('cardsCtrl', function ($scope, cardS
             }
         })
     };
+    
+    $scope.getCard();
     
     
     

@@ -1,11 +1,31 @@
+/* HOME VIEW */
+
+.bkgrnd-home {   
+    display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.img-wrap-home {
+    width: 100%;
+}
+
+    .img-wrap-home img {
+        width: 290px;
+    }
+
+/*  CARD VIEW */
 .background {
     background: #eee;
 }
 
 .main-wrapper {
-    /*margin-top: 10px;*/
-    /*border: 10px solid red;*/
     width: 100%;
+}
+
+.ion-home {
+    position: absolute;
+    left: 0;
 }
 
 a {
@@ -16,6 +36,11 @@ h1,h2,h3,h4,h5,h6,p {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-weight: 100;
+}
+
+.item-body h3 {
+    font-size: 18px;
+    margin-top: 4px;
 }
 
 .loading {
@@ -53,6 +78,15 @@ h1,h2,h3,h4,h5,h6,p {
     width: 290px;
     margin: 0 auto;
     text-align: left;
+}
+
+    .text-wrap p {
+        font-size: 16px;
+        color: #333;
+    }
+    
+#sml {
+    font-size: 12px;
 }
 
 .button {

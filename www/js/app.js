@@ -5,10 +5,14 @@ angular.module('marvelCardsApp', ['ionic'])
         $stateProvider
             .state('home', {
                 url: '/',
+                templateUrl: 'features/home/homeTmpl.html',
+                controller: 'cardsCtrl'
+            })
+            .state('card', {
+                url: '/card',
                 templateUrl: 'features/cards/cardsTmpl.html',
                 controller: 'cardsCtrl'
             })
-
 
         $urlRouterProvider
             .otherwise('/');

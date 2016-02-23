@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .item h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 22px;
     padding: 0 5px;
 }
 
@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
     .text-wrap p {
-        font-size: 16px;
+        font-size: 13px;
         color: #333;
     }
     
